@@ -1,0 +1,34 @@
+.buttons {
+  display: flex;
+  width: calc(100% - var(--gutter) * 2);
+  max-width: 450px;
+  justify-content: space-between;
+  margin-bottom: var(--gutter);
+
+  & .button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-alt);
+    color: white;
+    font-size: 1em;
+    padding: 0;
+    
+    &:active {
+      background-color: var(--color-light);
+      color: var(--color-alt);
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    &[disabled] {
+      background-color: var(--color-disabled);
+    }
+
+    &:not(:last-child) {
+      margin-right: calc(var(--gutter) * .2);
+    }
+
+  }
+}

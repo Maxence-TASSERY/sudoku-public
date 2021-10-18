@@ -1,0 +1,38 @@
+.selection {
+  display: flex;
+  width: calc(100% - var(--gutter) * 2);
+  max-width: 300px;
+  justify-content: space-between;
+
+  & .button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-alt);
+    color: var(--color-light);
+    font-size: 1.2em;
+    padding: 0;
+  
+    &:hover {
+      background-color: var(--color-dark);
+    }
+    
+    &:active {
+      background-color: var(--color-light);
+      color: var(--color-alt);
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  
+    &--selected {
+      background-color: var(--color-dark);
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    &:not(:last-child) {
+      margin-right: calc(var(--gutter) * .2);
+    }
+  }
+}

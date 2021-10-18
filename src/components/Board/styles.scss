@@ -1,0 +1,10 @@
+.board {
+  display: grid;
+  width: calc(100% - var(--gutter) * 2);
+  max-width: 450px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3px;
+  background-color: var(--color-dark);
+  border: solid 3px var(--color-dark);
+  margin-bottom: var(--gutter);
+}

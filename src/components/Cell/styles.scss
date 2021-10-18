@@ -1,0 +1,16 @@
+.cell {
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: var(--color-dark);
+
+  &--onFocus {
+    background-color: var(--color-focus);
+  }
+
+  &--locked {
+    color: black;
+  }
+}
